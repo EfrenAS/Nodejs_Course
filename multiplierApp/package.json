@@ -1,0 +1,33 @@
+{
+  "name": "multiplierapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run test && rimraf ./dist && tsc",
+    "dev": "tsc && concurrently \"tsc -w\" \"node --watch dist/app.js -b 9 -l 10 -s true -n table-9 -d tables\"",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/yargs": "^17.0.33",
+    "concurrently": "^9.1.0",
+    "rimraf": "^6.0.1",
+    "ts-standard": "^12.0.2",
+    "typescript": "^5.7.2"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ]
+  },
+  "dependencies": {
+    "yargs": "17.7.2"
+  }
+}

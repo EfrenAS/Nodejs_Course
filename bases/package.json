@@ -1,0 +1,21 @@
+{
+  "name": "bases",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "get-age": "^1.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "uuid": "^11.0.3",
+    "winston": "^3.17.0"
+  }
+}
