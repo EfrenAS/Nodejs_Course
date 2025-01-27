@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+pnpm-lock.yaml
+
+#Logs
+logs/
+
+#Env
+.env
+
+mongo/
+postgres/
