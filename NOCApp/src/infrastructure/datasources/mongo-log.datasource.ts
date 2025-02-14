@@ -1,4 +1,4 @@
-import { LogModel } from '../../data/mongo/models/log.mode'
+import { LogModel } from '../../data/mongo/models/log.model'
 import { LogDatasource } from '../../domain/datasources/log.datasource'
 import { LogEntity, LogLevel } from '../../domain/entities/log.entity'
 

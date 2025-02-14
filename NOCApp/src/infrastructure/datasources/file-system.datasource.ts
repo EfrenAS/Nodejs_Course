@@ -33,13 +33,13 @@ export class FileSystemDatasource implements LogDatasource {
 
     if (content === '') return []
 
-    const logs = content.split('\n').map(log => LogEntity.fromJSON(log))
+    const logs = content.split('\n').map(LogEntity.fromJson)
 
     return logs
   }
 
   async saveLog (newLog: LogEntity): Promise<void> {
-    const logAsJson = `${JSON.stringify(newLog)} \n`
+    const logAsJson = `${ JSON.stringify(newLog) }\n`
     const { ALL_LOGS_PATH, MEDIUM_LOGS_PATH, HIGHT_LOGS_PATH } = this.LOG_FILES_PATH
 
     fs.appendFileSync(ALL_LOGS_PATH, logAsJson)
