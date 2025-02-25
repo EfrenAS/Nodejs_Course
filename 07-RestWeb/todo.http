@@ -1,0 +1,13 @@
+### GET /api/todos
+GET http://localhost:3000/api/todos
+
+### GET /api/todos/:id
+GET http://localhost:3000/api/todos/1
+
+### POST /api/todos
+POST http://localhost:3000/api/todos
+Content-Type: application/json
+
+{
+  "text": "Buy milk"
+}
