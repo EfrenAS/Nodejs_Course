@@ -9,5 +9,17 @@ POST http://localhost:3000/api/todos
 Content-Type: application/json
 
 {
-  "text": "Buy milk"
+  "text": "Buy a new monitor"
 }
+
+### PUT /api/todos/:id
+PUT http://localhost:3000/api/todos/4
+Content-Type: application/json
+
+{
+  "text": "Buy awasome smartphone",
+  "completed": true
+}
+
+### DELETE /api/todos/:id
+DELETE http://localhost:3000/api/todos/4

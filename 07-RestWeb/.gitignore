@@ -1,4 +1,9 @@
 node_modules/
 dist/
 pnpm-lock.yaml
+
+# Environment variables
 .env
+
+# Postgres
+postgres/
