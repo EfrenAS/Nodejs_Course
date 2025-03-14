@@ -3,6 +3,7 @@ import { TodoDataSource } from "../../domain/datasources/todo.datasource";
 import { CreateTodoDto } from "../../domain/dtos/todos/create-todo.dto";
 import { UpdateTodoDto } from "../../domain/dtos/todos/update-todo.dto";
 import { TodoEntity } from "../../domain/entities/todo.entity";
+import  CustomError from "../../domain/errors/custom.error";
 
 export class TodoDataSourceImpl implements TodoDataSource {
    async create(createTodoDto: CreateTodoDto): Promise<TodoEntity> {
@@ -26,7 +27,7 @@ export class TodoDataSourceImpl implements TodoDataSource {
       },
       });
 
-      if(!todo) throw new Error(`Todo id ${id} not found`);
+      if(!todo) throw new CustomError(`Todo id ${id} not found`, 404);
 
       return TodoEntity.fromObject(todo);
    }

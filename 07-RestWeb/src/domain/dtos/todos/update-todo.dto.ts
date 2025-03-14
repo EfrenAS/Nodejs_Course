@@ -20,8 +20,6 @@ export class UpdateTodoDto {
     
     if(completed) newCompleted = completed === true ? true : false;
 
-    console.log(newCompleted);
-    
     return [undefined, new UpdateTodoDto(id, text, newCompleted)];
   }
 }

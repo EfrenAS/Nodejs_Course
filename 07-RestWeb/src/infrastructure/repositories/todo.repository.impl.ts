@@ -19,7 +19,6 @@ export class TodoRepositoryImpl implements TodoRepository {
   }
 
   findById(id: number): Promise<TodoEntity> {
-    console.log('llegue Aqui');
     return this.datasource.findById(id)
   }
 

@@ -7,9 +7,9 @@ interface Options {
   routes: Router
 }
 
-
 export class Server {
-  private app = express()
+  public readonly app = express()
+  private serverListener: any // This is for testing purposes
   private readonly routes: Router
   private readonly port: number
   private readonly publicPath: string
@@ -40,8 +40,13 @@ export class Server {
       res.sendFile(indexPath)
     })
 
-    this.app.listen(this.port, () =>{
+    this.serverListener = this.app.listen(this.port, () => {
       console.log(`Server is running on port ${this.port}`);
     })
+  }
+
+  // For testing purposes
+  public stop() {
+    this.serverListener?.close()
   }
 }
