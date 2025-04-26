@@ -1,0 +1,21 @@
+# dist
+dist/
+
+# Node modules
+node_modules/
+
+# IDE files
+.idea/
+.vscode/
+
+#Enviroment variables
+.env
+
+# Other
+*.log
+*.tmp
+*.swp
+
+
+#package.json
+package-lock.json
