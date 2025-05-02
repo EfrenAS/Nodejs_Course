@@ -1,0 +1,17 @@
+# Environment variables
+.env
+
+#mongoDB
+mongo/
+
+# PosgresSQL
+postgres/
+
+# Node modules
+node_modules/
+
+# Distribution files
+dist/
+
+# Package files
+package-lock.json
