@@ -7,3 +7,6 @@ pnpm-lock.yaml
 
 # Postgres
 postgres/
+
+# Jest Coverage
+coverage/
