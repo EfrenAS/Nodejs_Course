@@ -1,7 +1,0 @@
-/node_modules
-*.log
-coverage/
-
-dist/
-
-package-lock.json
